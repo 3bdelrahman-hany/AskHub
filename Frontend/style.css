@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+    /* Modern Centering */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.question {
+    width: 100%;
+    max-width: 600px; /* Limits width on desktop */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+#userQuestion {
+    
+    min-width: 300px;
+    min-height: 45px;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    
+}
+
+#userQuestion:focus {
+    max-width: 100%; /* Expands to fill the container */
+    height: 100px;
+    transform: scale(1.02);
+    background-color: burlywood;
+    outline: none;
+}
+
+.answer {
+    max-width: 700px;
+    min-width: 700px;
+    min-height: 200px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: 1px solid white;
+    padding: 20px;
+    margin-top: 20px;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+.btn {
+    appearance: button;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border: none;
+    box-shadow: rgba(50, 50, 93, .1) 0 2px 5px 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    height: 48px;
+    padding: 0 25px;
+    transition: all .2s;
+    width: 100%;
+    max-width: 300px;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* ===== Responsive Adjustments ===== */
+
+/* For Tablets and below */
+@media (max-width: 768px) {
+    h1 { font-size: 1.5rem; }
+    
+    .answer {
+        min-height: 150px;
+        font-size: 1rem;
+    }
+}
+
+/* For Mobile Phones */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        justify-content: flex-start; /* Better for scrolling on tiny screens */
+        padding-top: 50px;
+    }
+
+    #userQuestion {
+        font-size: 16px;
+    }
+
+    .btn {
+        height: 44px;
+        font-size: 16px;
+    }
+}

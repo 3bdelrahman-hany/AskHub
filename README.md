@@ -36,7 +36,6 @@ npm install
 Create a .env file in the root directory and add:
 
 PORT=3000
-DATABASE_URL=your_database_url
 
 
 Start the server:

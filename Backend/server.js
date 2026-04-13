@@ -21,7 +21,7 @@ app.post("/ask",async(req,res)=>{
       return res.status(400).json({error:"Question is required"});
 
   const response = await ai.models.generateContent({
-  model: "gemini-2.5-flash",
+  model: "gemini-3-flash-preview",
   contents: question,
   config:{
     systemInstruction:"You are a helpfull assistant and help people "

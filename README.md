@@ -24,7 +24,7 @@ Environment Variables: .env
 
 Clone the repository:
 
-git clone https://github.com/your-username/Askhub.git
+git clone https://github.com/your-username/AskHub.git
 cd ask-hub
 
 
